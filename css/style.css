@@ -68,9 +68,11 @@ table {
     display: block;
     padding: 8px 10px 8px 18px;
     margin-left: 10px;
+    text-decoration: none;
 }
 .fb a{
 	color: #4267B2;
+    border-right: 1px solid #CCCCCC;
 }
 .twitter a{
 	color: #1DA1F2;
