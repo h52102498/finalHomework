@@ -96,6 +96,11 @@ table {
 	color: #00251A;
 	font-weight: 700;
 	text-decoration: none;
+	padding-bottom: 22px;
+}
+.menu a:hover{
+	color: #00cc99;
+	border-bottom: 2px solid #00cc99;
 }
 .banner{
 	height: 390px;
@@ -147,6 +152,85 @@ table {
 .item ul li{
 	list-style-type: disc;
 	margin-left: 20px;
+}
+.list{
+	width: 920px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.list h2{
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 24px;
+}
+table tr{
+	border-bottom: 1px solid rgb(195, 195, 195);
+	text-align: left;
+}
+.first{
+	border-top: 1px solid rgb(195,195,195);
+	background: rgb(255, 255, 255);
+}
+table tr th,table tr td{
+	padding: 16px 80px 16px 17px;
+}
+table tr th{
+	font-weight: bold;
+}
+.mark{
+	color: #00cc99;
+	font-weight: bold;
+}
+.form{
+	margin-top: 60px;
+	background: linear-gradient(#e4fff8,#a2ddce);
+}
+.form h2{
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 28.8px;
+	text-align: center;
+	padding: 36px 0 55px;
+}
+h3{
+	margin-bottom: 8px;
+}
+input{
+	width: 250px;
+	padding: 7px 10px;
+	border: 1px solid rgb(195, 195, 195);
+	border-radius: 5px;
+	margin-bottom: 16px;
+}
+.formleft{
+	float: left;
+	left: 100px;
+	margin: 0 50px 0 600px;
+}
+.formright{
+	float: left;
+}
+textarea{
+	width: 400px;
+	height: 175px;
+	border: 1px solid rgb(195, 195, 195);
+	border-radius: 5px;
+}
+.clear{
+	clear: both;
+}
+.btn{
+	margin: 16px 42% 36px;
+	width: 160px;
+	border: #00251a;
+	background: #00251A;
+	color: #ffffff;
+	margin-left: 900px;
+}
+.btn:hover{
+	background: #00cc99;
 }
 .footer {
 	display: flex;
