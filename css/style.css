@@ -47,36 +47,116 @@ table {
 	border-spacing: 0;
 }
 .wrap{
-    width: 1024px;
-    margin: 0 auto;
+	width: 1920px;
+	margin: 0 auto;
 }
-.top-link{
-    display: flex;
-    flex-direction: row-reverse;
-    background-color: #f6f6f6;
+.top{
+	background-color: #F6F6F8;
+	padding-top: 4px;
+	padding-bottom: 4px;
 }
-.top-menu{
-    display: flex;
+.top ul{
+	display: flex;
+	justify-content: end;
+	padding-right: 405px;
 }
-.fb{
-    background: url(../images/facebookIcon.png)no-repeat 8px;
-}
-.twitter{
-    background: url(../images/twitterIcon.png)no-repeat 8px;
-}
-.fb a,.twitter a{
-    display: block;
-    padding: 8px 10px 8px 18px;
-    margin-left: 10px;
-    text-decoration: none;
+.fb img,.twitter img{
+	margin-right: 5px;
+	margin-left: 12px;
 }
 .fb a{
+	border-right: 1px solid #cccccc;
+	padding-right: 12px;
 	color: #4267B2;
-    border-right: 1px solid #CCCCCC;
 }
 .twitter a{
+	margin-left: 5px;
 	color: #1DA1F2;
 }
-.fb a:hover, .twitter a:hover{
-	opacity: 0.5;
+.header{
+	display: flex;
+	justify-content: space-around;
+	height: 76px;
+	align-items: center;
 }
+.logo{
+	width: 151px;
+	height: 36px;
+	background-image: url(../images/hexschool-logo.png);
+	background-repeat: no-repeat;
+	text-indent: 101%;
+  	white-space: nowrap;
+ 	overflow: hidden;
+}
+.menu{
+	display: flex;
+}
+.menu li a{
+	margin-right: 42px;
+	color: #00251A;
+	font-weight: 700;
+	text-decoration: none;
+}
+.banner{
+	height: 390px;
+	background-image: url(../images/91af2627ea834613b9315e1a2c78e746.png);
+	position: relative;
+}
+.text{
+	position:absolute;
+	background-color: rgba(255, 255, 255, 0.5);
+	padding-top: 27px;
+	padding-bottom: 27px;
+	padding-left: 498px;
+	padding-right: 1026px;
+	top: 125px;
+}
+.text p{
+	font-weight: 700;
+	font-size: 36px;
+	color: #1E1E1E;
+}
+.course{
+	display: flex;
+	justify-content: center;
+}
+.item{
+	width: 350px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin: 60px 30px;
+	padding: 20px;
+	border: 1px solid #cccccc;
+	box-shadow:0 1px 0 0 gray;
+	border-radius: 5px;
+}
+.course img{
+	margin: 0 auto;
+}
+.item h3{
+	font-weight: bold;
+	text-align: center;
+	font-size: 20px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.item p{
+	line-height: 24px;
+}
+.item ul li{
+	list-style-type: disc;
+	margin-left: 20px;
+}
+.footer {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 22px 0;
+  }
+  .footer p {
+	line-height: 24px;
+  }
+  .footer p span {
+	color: #00cc99;
+  }
