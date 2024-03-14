@@ -90,37 +90,87 @@ table {
 }
 .menu{
 	display: flex;
+	text-align: center;
+	flex-direction: row;
+	align-items: center;
+	
 }
-.menu li a{
-	margin-right: 42px;
+.menu a,.dropdown {
 	color: #00251A;
-	font-weight: 700;
 	text-decoration: none;
-	padding-bottom: 22px;
 }
-.menu a:hover{
-	color: #00cc99;
-	border-bottom: 2px solid #00cc99;
+.menu li{
+	display: block;
+	margin-left: 40px;
+	font-weight: bold;
+	transition: 0.1s;
 }
-.banner{
-	height: 390px;
-	background-image: url(../images/91af2627ea834613b9315e1a2c78e746.png);
+.menu>li>a:hover{
+	border-bottom: 5px solid #00cc99;
+	padding-bottom: 20px;
+	transition: 0.1s;
+}
+.dropdown{
 	position: relative;
+	
 }
-.text{
-	position:absolute;
-	background-color: rgba(255, 255, 255, 0.5);
-	padding-top: 27px;
-	padding-bottom: 27px;
+.dropdown-open{
+	position: absolute;
+	margin-top: 15px;
+	z-index: 1;
+	background: linear-gradient(180deg, #ffffff 0%, #ffffff 100%);
+	border-radius: 5px;
+	margin-left: -18px;
+}
+.dropdown-open li{
+	width: 100px;
+	margin: 0 auto;
+}
+.dropdown-open a{
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.dropdown-open a:hover{
+	background: rgba(0, 0, 0, 0.15);
+	border-radius: 5px;
+	border-bottom: none;
+}
+.swiper-container{
+	position: relative;
+	height: 418px;
+	width: 1500px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.title{
+	position: absolute;
+	top: 30%;
+	background: #ffffff36;
+	padding-top: 26px;
 	padding-left: 498px;
-	padding-right: 1026px;
-	top: 125px;
-}
-.text p{
-	font-weight: 700;
+	font-weight: bold;
 	font-size: 36px;
-	color: #1E1E1E;
 }
+.title p{
+	margin-bottom: 10px;
+}
+:root{
+	--primary-color: gray;
+  }
+  .swiper-pagination-bullet{
+	background: var(--primary-color) !important;
+	/* 沒有active的樣式是有透明度的這裡加上讓他不透明 */ 
+	opacity: 1 !important;
+	transition:0.5s ;  
+   }
+   /* 在active的樣式重寫border-radius與padding調整到pill形狀*/
+   .swiper-pagination-bullet-active{
+	padding: 0px 8px;
+	border-radius: 6px;
+	transition:0.5s ;
+   }
+
 .course{
 	display: flex;
 	justify-content: center;
@@ -138,6 +188,7 @@ table {
 }
 .course img{
 	margin: 0 auto;
+	text-align: center;
 }
 .item h3{
 	font-weight: bold;
@@ -152,6 +203,9 @@ table {
 .item ul li{
 	list-style-type: disc;
 	margin-left: 20px;
+}
+.item a{
+	text-align: center;
 }
 .list{
 	width: 920px;
@@ -238,9 +292,29 @@ textarea{
 	align-items: center;
 	padding: 22px 0;
   }
-  .footer p {
+.footer p {
 	line-height: 24px;
-  }
-  .footer p span {
+}
+.footer p span {
 	color: #00cc99;
-  }
+}
+.backtop{
+    position: fixed;
+	right: 20px;
+	bottom: 20px;
+	
+	.topbutton{
+		.fa-circle-up {
+		color: #00cc99;
+		}
+	  }
+	}
+.backtop:hover{
+	.fa-circle-up {
+		color: white;
+		background: #00251A;
+		border: #00251A 2px solid;
+		border-radius: 100%;
+		padding: 2%;
+	}
+}
