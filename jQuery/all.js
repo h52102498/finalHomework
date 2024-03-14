@@ -5,14 +5,14 @@ $(document).ready(function () {
         $(this).parent().siblings().find('.dropdown-open').slideUp(500);
     });    
     $(".backtop").click(function (e) {
-        e.preventDefault();
-        $("html,body").animate(
-          {
-            scrollTop: 0,
-          },
-          500
-        );
-    });
+      e.preventDefault();
+      $("html,body").animate(
+        {
+          scrollTop: 0,
+        },
+        500
+      );
+  });
     const swiper = new Swiper(".swiper-container", {
       // Optional parameters / 加入參數與設定值
       direction: "horizontal", // 輪播方向
